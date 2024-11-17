@@ -1,0 +1,83 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="app.css">
+  <!-- <link rel="stylesheet" href="app.css"> -->
+  <meta name="theme-color" content="#fafafa">
+
+
+</head>
+
+<body>
+    <div class="container">
+
+      <!-- タイトル -->
+      <div id="js-question" class="mt-3 alert alert-primary" role="alert" style="font-size:25px" >
+        A simple primary alert—check it out!
+      </div>
+     
+      <div class="card-deck">
+        <!-- 入力欄 -->
+        <div class="card">
+          <!-- タイトル -->
+          <div class="card-header">
+            <h1 id="1pName" style="font-size:30px">女のパラメータ</h1>
+          </div>
+
+          <!-- 説明 -->
+          <p style="font-size:20px" class="mt-2 ml-4">残りポイントが0になるように1~50の数字を入力してください。</p>
+          <p style="font-size:20px" class="ml-4">各パラメータは50人中の順位を表しており、1に近づくほど自分の理想に近づきます。</p>
+          <p style="font-size:20px" class="ml-4">例えば、顔 : 1ptにすると、50人中1位の顔になります。</p>
+
+          <!-- フォーム -->
+          <form class="form-horizontal" action="/" method="POST" name="assumption">
+            <div class="form-group row my-3">
+              <label class="col-sm-4 control-label ml-3" style="font-size:20px" for="asset1">名前</label>
+              <div class="col-sm-4">
+                <input type="text" name="asset_name1" class="form-control">
+              </div>
+              <input type="submit" class="submitButton" style="font-size:20px" value="決定">
+              <input type="reset" class="clearButton" name="clear1" style="font-size:20px" class="ml-2" value="クリア">
+            </div>
+          </form>
+
+          <dl class="row">
+           <dt style="font-size:25px" class="mt-1 ml-3 col-4">残りポイント</dt>
+           <dd style="font-size:25px" class="mt-1 ml-8 " id="leftPt">125</dd>
+          </dl>
+    
+          <div class="text-center my-5">
+           <button type="button" id="decideButton" class="ms-1 btn btn-primary">確定</button>
+          </div>
+
+
+          <div id="displayText" class="my-3 ml-3 col-4">
+           <p class="kekka"></p>
+          </div>
+
+          <button type="button" class="ms-1 btn btn-primary" id="copyButton">コピー</button>
+          <button type="button" class="ms-1 my-1 btn btn-primary" id="resetButton">リセット</button>
+
+
+        </div><!--card-->
+      </div><!--carddeck-->
+
+        
+    </div><!--container-->
+    
+    
+    <script src="app.js"></script>  
+</body>
+
+</html>
