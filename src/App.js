@@ -252,6 +252,7 @@ useEffect(() => {
 
           <DecideComponent />
 
+
           <div id="displayText" className="my-3 ml-3 col-4">
             {displayText.map((text, index) => (
               <p key={index} className="kekka">{text}</p>
